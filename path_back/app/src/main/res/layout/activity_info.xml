@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/azul_marino2"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <!-- Header con icono y título -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginBottom="32dp">
+
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/ic_location_app"
+                android:layout_marginBottom="16dp"
+                android:contentDescription="Logo PathBack" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Acerca de PathBack"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:textColor="@color/colorAccent"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <!-- Descripción detallada -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/descripcion_app"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="32dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Características principales -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Características principales:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="• Localización GPS precisa en tiempo real\n• Guardado de ubicaciones importantes\n• Navegación con rutas optimizadas\n• Mapas offline de OpenStreetMap\n• Interfaz intuitiva y fácil de usar\n• Totalmente gratuita y sin publicidad"
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="32dp"
+            android:layout_marginStart="8dp" />
+
+        <!-- Información técnica -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Información técnica:"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/colorAccent"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PathBack utiliza OpenStreetMap para proporcionar mapas detallados y actualizados. La aplicación requiere permisos de ubicación para funcionar correctamente y acceso a internet para cargar mapas y calcular rutas."
+            android:textSize="14sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40dp"
+            android:layout_marginStart="8dp"
+            android:justificationMode="inter_word" />
+
+        <!-- Botones de acción -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btn_contacto"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:text="Contactar por email"
+                android:textSize="16sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:layout_marginBottom="12dp"
+                android:drawableStart="@android:drawable/ic_dialog_email"
+                android:drawablePadding="8dp" />
+
+            <Button
+                android:id="@+id/btn_volver"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Volver"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:backgroundTint="@color/colorAccent"
+                android:alpha="0.8" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!-- Mapa -->
+    <org.osmdroid.views.MapView
+        android:id="@+id/mapa"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+    <!-- Botones flotantes: Centrar marcador y Eliminar marcador -->
+    <LinearLayout
+        android:id="@+id/layoutMarcadorOpciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="end|bottom"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="110dp">
+
+        <Button
+            android:id="@+id/btnCentrarMarcador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Centrar marcador"
+            android:background="@drawable/boton_estilo_morado"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:visibility="gone" />
+
+        <Button
+            android:id="@+id/btnEliminarMarcador"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Eliminar marcador"
+            android:layout_marginTop="8dp"
+            android:padding="10dp"
+            android:background="@drawable/boton_estilo_morado"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:visibility="gone" />
+    </LinearLayout>
+
+    <!-- Botones inferiores normales -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_gravity="bottom"
+        android:layout_margin="16dp">
+
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/boton_estilo_morado"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="Guardar Ubicación" />
+
+        <Button
+            android:id="@+id/btnCentrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:background="@drawable/boton_estilo_morado"
+            android:backgroundTint="@color/colorAccent"
+            android:textColor="@color/white"
+            android:padding="10dp"
+            android:text="Centrar Mapa" />
+    </LinearLayout>
+
+</FrameLayout>

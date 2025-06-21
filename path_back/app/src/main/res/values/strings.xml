@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">PathBack</string>
+    <string name="set_marker">Marcar ubicación actual</string>
+    <string name="navigate_to_marker">Navegar al marcador</string>
+    <string name="location_permission_needed">Se necesitan permisos de ubicación para esta app</string>
+    <string name="permission_granted">Permisos concedidos</string>
+    <string name="permission_denied">Permisos denegados. La app no funcionará correctamente</string>
+    <string name="marker_set">Marcador establecido en la ubicación actual</string>
+    <string name="no_marker_set">No hay ningún marcador establecido</string>
+    <string name="navigation_started">Navegación iniciada</string>
+    <string name="gps_disabled">El GPS está desactivado. Por favor actívelo</string>
+    <string name="descripcion_app">Muchas personas necesitan guardar ubicaciones temporales a diario:
+        \n El lugar donde aparcaron, un punto de encuentro, una tienda, o un lugar especial que desean recordar.
+        \n Sin embargo, las aplicaciones actuales suelen ser complejas, requieren conexión continua o registro de cuenta.
+        \n PathBack nace como una solución sencilla, intuitiva y directa para esta necesidad concreta.
+        \n El objetivo es ofrecer una herramienta útil que permita guardar y volver a una única ubicación sin complicaciones,
+        \n aprovechando OpenStreetMap y los servicios de localización GPS del dispositivo.</string>
+</resources>
